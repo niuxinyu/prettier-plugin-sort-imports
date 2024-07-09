@@ -1,6 +1,6 @@
 {
-  "name": "@trivago/prettier-plugin-sort-imports",
-  "version": "4.3.0",
+  "name": "@koalan/prettier-plugin-sort-imports",
+  "version": "1.0.0",
   "description": "A prettier plugins to sort imports in provided RegEx order",
   "main": "lib/src/index.js",
   "types": "types/index.d.ts",
@@ -26,11 +26,6 @@
     "typescript",
     "javascript"
   ],
-  "author": {
-    "name": "Ayush Sharma",
-    "email": "ayush.sharma@trivago.com",
-    "url": "https://github.com/ayusharma"
-  },
   "license": "Apache-2.0",
   "dependencies": {
     "@babel/generator": "7.17.7",
