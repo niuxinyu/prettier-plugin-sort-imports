@@ -3,4 +3,6 @@ This is fork from [@trivago/prettier-plugin-sort-imports](https://github.com/tri
 old
 ```
 "prettier": "2.8",
+"jest": "26.6.3",
+"ts-jest": "26.5.3",
 ```
