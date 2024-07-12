@@ -11,5 +11,5 @@ module.exports = {
     collectCoverageFrom: ['src/**/*.ts', '!<rootDir>/node_modules/'],
     preset: 'ts-jest',
     testEnvironment: 'node',
-    // prettierPath: null,
+    prettierPath: null,
 };

@@ -1,10 +1,10 @@
-import * as babelParsers from 'prettier/plugins/babel';
-import * as flowParsers from 'prettier/plugins/flow';
-import * as htmlParsers from 'prettier/plugins/html';
-import * as typescriptParsers from 'prettier/plugins/typescript';
+import * as babelParsers from 'prettier/plugins/babel'
+import * as flowParsers from 'prettier/plugins/flow'
+import * as htmlParsers from 'prettier/plugins/html'
+import * as typescriptParsers from 'prettier/plugins/typescript'
 
-import { defaultPreprocessor } from './preprocessors/default-processor';
-import { vuePreprocessor } from './preprocessors/vue-preprocessor';
+import { defaultPreprocessor } from './preprocessors/default-processor'
+import { vuePreprocessor } from './preprocessors/vue-preprocessor'
 
 const options = {
   importOrder: {
@@ -48,48 +48,26 @@ const options = {
     default: false,
     description: 'Should specifiers be sorted?',
   },
-};
+}
 
 module.exports = {
-  // languages: [
-  //   {
-  //     name: 'babel',
-  //     parsers: ['babel']
-  //   },
-  //   {
-  //     name: 'flow',
-  //     parsers: ['flow'],
-  //   },
-  //   {
-  //     name: 'typescript',
-  //     parsers: ['typescript'],
-  //   },
-  //   {
-  //     name: 'vue',
-  //     parsers: ['vue'],
-  //   },
-  // ],
   parsers: {
     babel: {
-      // ...babelParsers.parsers.babel,
-      parser: babelParsers.parsers.babel.parse,
+      ...babelParsers.parsers.babel,
       preprocess: defaultPreprocessor,
     },
     flow: {
-      // ...flowParsers.parsers.flow,
-      parser: flowParsers.parsers.flow.parse,
+      ...flowParsers.parsers.flow,
       preprocess: defaultPreprocessor,
     },
     typescript: {
-      // ...typescriptParsers.parsers.typescript,
-      parser: typescriptParsers.parsers.typescript.parse,
+      ...typescriptParsers.parsers.typescript,
       preprocess: defaultPreprocessor,
     },
     vue: {
-      // ...htmlParsers.parsers.vue,
-      parser: htmlParsers.parsers.vue.parse,
+      ...htmlParsers.parsers.vue,
       preprocess: vuePreprocessor,
     },
   },
   options,
-};
+}
