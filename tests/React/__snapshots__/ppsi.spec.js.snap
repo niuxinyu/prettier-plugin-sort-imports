@@ -1,7 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`react.tsx - typescript-verify: react.tsx 1`] = `
+// @ts-nocheck
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import sameLevelRelativePath from "./sameLevelRelativePath";
+import thirdParty from "third-party";
+export { random } from './random';
+import c from 'c';
+import oneLevelRelativePath from "../oneLevelRelativePath";
+import otherthing from "@core/otherthing";
+import a from 'a';
+import twoLevelRelativePath from "../../twoLevelRelativePath";
+import component from "@ui/hello";
+import React, {useEffect, useState, useReducer} from 'react'
+import { useNavigate } from 'react-router'
+interface ITestComponentProps<T> {
+  data: T
+}
+export const TestComponent = <T extends [],>(props: ITestComponentProps<T>) => {
+  return props.data.map((item) => {
+    return <div>{item}</div>
+  })
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// @ts-nocheck
+import React, { useEffect, useState, useReducer } from "react";
+
+import a from "a";
+import c from "c";
+import { useNavigate } from "react-router";
+import thirdParty from "third-party";
+
+import otherthing from "@core/otherthing";
+
+import component from "@ui/hello";
+
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
+import oneLevelRelativePath from "../oneLevelRelativePath";
+import sameLevelRelativePath from "./sameLevelRelativePath";
+
+export { random } from "./random";
+
+interface ITestComponentProps<T> {
+    data: T;
+}
+export const TestComponent = <T extends []>(props: ITestComponentProps<T>) => {
+    return props.data.map((item) => {
+        return <div>{item}</div>;
+    });
+};
+
+`;
+
 exports[`react-native.tsx - typescript-verify: react-native.tsx 1`] = `
 // @ts-nocheck
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import sameLevelRelativePath from "./sameLevelRelativePath";
+import thirdParty from "third-party";
+export { random } from './random';
+import c from 'c';
+import oneLevelRelativePath from "../oneLevelRelativePath";
+import otherthing from "@core/otherthing";
+import a from 'a';
+import twoLevelRelativePath from "../../twoLevelRelativePath";
+import component from "@ui/hello";
 import Ionicons from '@expo/vector-icons/Ionicons'
 import { type IconProps } from '@expo/vector-icons/build/createIconSet'
 import { type ComponentProps } from 'react'
@@ -18,6 +81,20 @@ import { type ComponentProps } from "react";
 
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { type IconProps } from "@expo/vector-icons/build/createIconSet";
+import a from "a";
+import c from "c";
+import thirdParty from "third-party";
+
+import otherthing from "@core/otherthing";
+
+import component from "@ui/hello";
+
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
+import oneLevelRelativePath from "../oneLevelRelativePath";
+import sameLevelRelativePath from "./sameLevelRelativePath";
+
+export { random } from "./random";
 
 export function TabBarIcon({
     style,

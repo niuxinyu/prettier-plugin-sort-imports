@@ -9,13 +9,13 @@ import otherthing from "@core/otherthing";
 import a from 'a';
 import twoLevelRelativePath from "../../twoLevelRelativePath";
 import component from "@ui/hello";
-import Ionicons from '@expo/vector-icons/Ionicons'
-import { type IconProps } from '@expo/vector-icons/build/createIconSet'
-import { type ComponentProps } from 'react'
-
-export function TabBarIcon({
-  style,
-  ...rest
-}: IconProps<ComponentProps<typeof Ionicons>['name']>) {
-  return <Ionicons size={28} style={[{ marginBottom: -3 }, style]} {...rest} />
+import React, {useEffect, useState, useReducer} from 'react'
+import { useNavigate } from 'react-router'
+interface ITestComponentProps<T> {
+  data: T
+}
+export const TestComponent = <T extends [],>(props: ITestComponentProps<T>) => {
+  return props.data.map((item) => {
+    return <div>{item}</div>
+  })
 }
